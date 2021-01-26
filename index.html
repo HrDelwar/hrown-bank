@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HrOwn Bank || Practice</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"><!--/bootstrap css-->
+    <link rel="stylesheet" href="css/style.css"><!--/main css-->
+</head>
+
+<body>
+    <div class="container ">
+        <h1 class="text-center text-capitalize my-5">Welcome to HrOwn Bank</h1>
+        <!--/login area -->
+        <div id="login-area" class="shadow-custom rounded p-5">
+            <h4>Login</h4>
+            <input type="text" name="" id="" placeholder="Email" class="form-control my-4">
+            <input type="password" name="" id="" placeholder="Password" class="form-control mb-4">
+            <button id="login" class="btn btn-success ">Enter</button>
+        </div>
+
+        <!--/transaction area -->
+        <div id="transaction-area">
+            <section class="row">
+                <!--/ 3 column for deposit and withdraw showing balance section-->
+                <div class="col-md-4  ">
+                    <div class="bg-success p-4 rounded mt-3 text-white">
+                        <h6>Deposit</h6>
+                        <h2>$<span id="current-deposit" class="ms-3 d-inline-block">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="bg-dark p-4 rounded mt-3 text-white">
+                        <h6>Withdraw</h6>
+                        <h2>$<span id="current-withdraw" class="ms-3 d-inline-block">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4  ">
+                    <div class="bg-info  p-4 rounded mt-3 text-white">
+                        <h6>Balance</h6>
+                        <h2>$<span id="total-balance" class="ms-3 d-inline-block">1000</span></h2>
+                    </div>
+                </div>
+            </section>
+            <section class="row mt-5">
+                <!--/ 2 column for deposit and withdraw adding balance section-->
+                <div class="col-md-6 mb-5">
+                    <div class="deposit p-5 rounded shadow-custom">
+                        <h2>Deposit</h2>
+                        <input type="text" name="" id="deposit-amount" placeholder="$ amount you want to deposit"
+                            class="form-control">
+                        <button id="deposit-btn" class="btn btn-success mt-3">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="withdrow p-5  shadow-custom">
+                        <h2>Withdraw</h2>
+                        <input type="text" name="" id="withdraw-amount" placeholder="$ amount you want to withdraw"
+                            class="form-control">
+                        <button id="withdraw-btn" class="btn btn-success mt-3">Withdraw</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/main.js"></script><!--/ main script-->
+</body>
+
+</html>

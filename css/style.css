@@ -1,0 +1,9 @@
+/* make custom box shadow */
+.shadow-custom{
+    box-shadow: 5px 5px 16px gray;
+}
+
+/*default hide transaction area  */
+#transaction-area{
+    display: none;
+}
